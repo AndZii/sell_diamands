@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   get 'main/index'
 
-  get 'main/contacts' => "sell-diamonds-contacts"
+  get 'where-to-sell-diamonds-in-queens' => "main#contacts", as: :main_contacts
 
-  get 'main/about_diamonds' => "about-selling-diamonds"
+  get 'how-to-sell-diamonds-in-nyc' => "main#about_diamonds", as: :main_about_diamonds
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
