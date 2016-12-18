@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Sell Diamonds and Jewelry In Queens | NYC | New York
+    %meta{:content => "Get Cash For Diamonds and Jewelry in NYC Today. Top Dollar For Your Items In New York.", :name => "description"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "Sell Diamonds And Jewelry In NYC For Cash. We Always Pay More For Diamonds In New York.", :property => "og:title"}/
+    %meta{:content => "selldiamondsqueens.com - Cash For Diamonds And Jewelry In Queens.", :property => "twitter:title"}/
+    %meta{:content => "Get Cash for Your Diamonds And Jewelry in NYC Today.", :property => "og:description"}/
+    %meta{:content => "http://selldiamondsqueens.com/bunner.jpg", :property => "og:image"}/
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    %link{:href => "https://fonts.googleapis.com/css?family=Slabo+27px", :rel => "stylesheet", :type => "text/css"}/
+    %meta{:content => "initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=yes", :name => "viewport"}/
+  %body
+    = render "layouts/navbar"
+    .container-fluid
+      = yield
+    = render "layouts/footer"
+    %a.float-button-mobile.visible-xs{:href => "tel:+1-718-846-1600"}
+      %i.fa.fa-phone
